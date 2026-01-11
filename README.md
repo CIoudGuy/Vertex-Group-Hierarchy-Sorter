@@ -1,4 +1,4 @@
-# Vertex-Group-Hierarchy-Sorter
+# Vertex Group Hierarchy Sorter
 List vertex groups in armature hierarchy order. (Takes your existing Vertex Groups and shows them in a much nicer way. This makes it easier for you to navigate)
 
 ‎ 
