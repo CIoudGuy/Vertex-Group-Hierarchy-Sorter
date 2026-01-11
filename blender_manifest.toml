@@ -1,0 +1,10 @@
+schema_version = "1.0.0"
+id = "vertex_group_hierarchy_sorter"
+version = "1.0.2"
+name = "Vertex Group Hierarchy Sorter"
+tagline = "List vertex groups in armature hierarchy order"
+maintainer = "Cloud Guy <datcloudguy@proton.me>"
+website = "https://linktr.ee/datcloudguy"
+type = "add-on"
+blender_version_min = "4.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
