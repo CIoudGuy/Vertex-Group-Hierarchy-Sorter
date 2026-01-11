@@ -1,6 +1,6 @@
 schema_version = "1.0.0"
 id = "vertex_group_hierarchy_sorter"
-version = "1.0.2"
+version = "1.0.3"
 name = "Vertex Group Hierarchy Sorter"
 tagline = "List vertex groups in armature hierarchy order"
 maintainer = "Cloud Guy <datcloudguy@proton.me>"

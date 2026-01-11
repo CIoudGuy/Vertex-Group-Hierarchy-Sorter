@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Vertex Group Hierarchy Sorter",
     "author": "Cloud Guy",
-    "version": (1, 0, 2),
+    "version": (1, 0, 3),
     "blender": (3, 0, 0),
     "location": "Properties > Object Data > Vertex Groups panel",
     "description": "List vertex groups in armature hierarchy order",
@@ -34,9 +34,14 @@ def set_active_bone(armature, bone_name):
     pbone = armature.pose.bones.get(bone_name)
     if not pbone:
         return
-    for b in armature.data.bones:
-        b.select = False
-    pbone.bone.select = True
+    if hasattr(pbone, "select"):
+        for pb in armature.pose.bones:
+            pb.select = False
+        pbone.select = True
+    else:
+        for b in armature.data.bones:
+            b.select = False
+        pbone.bone.select = True
     armature.data.bones.active = pbone.bone
 
 class VGH_UL_items(bpy.types.UIList):
